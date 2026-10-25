@@ -43,7 +43,7 @@ def main():
     print(node)
 
     # 기존 정적 파일 복사 로직 실행 후...
-    generate_pages_recursive("content", "template.html", "docs", basepath)
+    generate_pages_recursive("content", "template.html",destination_dir , basepath)
 
 
 if __name__ == "__main__":
