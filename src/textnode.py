@@ -365,7 +365,7 @@ def generate_page(from_path, template_path, dest_path, basepath= "/"):
     full_html = template_content.replace("{{ Title }}", title)
     full_html = full_html.replace("{{ Content }}", html_content)
     full_html = full_html.replace('href="/', f'href="{basepath}')
-    full_html = full_html.replace('stc="/', f'src=f"{basepath}')
+    full_html = full_html.replace('src="/', f'src="{basepath}')
     
 
     # 6. 저장할 대상 폴더가 없으면 미리 생성 (없으면 FileNotFoundError 발생)
