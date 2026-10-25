@@ -251,7 +251,7 @@ def block_to_html_node(block):
 
     if block_type == BlockType.QUOTE:
         return quote_to_html_node(block)
-    raise ValueError("유효아지 않은 블록 유형입니다.")
+    raise ValueError("유효하지 않은 블록 유형입니다.")
 
 def text_to_children(text):
     text_nodes = text_to_textnodes(text)
